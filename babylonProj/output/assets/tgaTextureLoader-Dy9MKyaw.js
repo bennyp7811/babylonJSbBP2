@@ -1,0 +1,1 @@
+import{uH as r,uI as n}from"./flowGraphSceneTickEventBlock-YCfZJfc8.js";import"./index-ISOSkmha.js";class d{constructor(){this.supportCascades=!1}loadCubeData(){throw".env not supported in Cube."}loadData(e,t,a){const o=new Uint8Array(e.buffer,e.byteOffset,e.byteLength),s=r(o);a(s.width,s.height,t.generateMipMaps,!1,()=>{n(t,o)})}}export{d as _TGATextureLoader};

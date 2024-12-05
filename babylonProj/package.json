@@ -1,0 +1,32 @@
+{
+  "name": "babylonproj",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host",
+    "lighting02build": "vite build lighting02",
+    "lighting02preview": "preview lighting02 --host",
+    "villagebuild": "vite build village",
+    "villagepreview": "preview village --host",
+    "rotationbuild": "tsc && vite build rotation",
+    "rotationpreview": "vite preview rotation --host",
+    "frames01build": "tsc && vite build frames01",
+    "frames01preview": "vite preview frames01 --host",
+    "shapes01build": "tsc && vite build shapes01",
+    "shapes01preview": "vite preview shapes01 --host",
+    "AWelement1build": "tsc && vite build AWelement1",
+    "AWelement1preview": "vite preview AWelement1 --host",
+    "collisionbuild": "vite build collision",
+    "collisionpreview": "vite preview collision --host",
+    "multibuild": "vite build multi",
+    "multipreview": "vite preview multi --host"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^5.4.9",
+    "vite-plugin-chunk-split": "^0.5.0" 
+  }
+}
