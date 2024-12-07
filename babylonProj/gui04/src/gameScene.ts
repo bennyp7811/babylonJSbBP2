@@ -26,7 +26,7 @@ function backgroundMusic(scene: Scene): Sound{
 
   Engine.audioEngine!.useCustomUnlockedButton = true;
 
-  // Unlock audio on first user interaction.
+  
   window.addEventListener('click', () => {
     if(!Engine.audioEngine!.unlocked){
         Engine.audioEngine!.unlock();
@@ -59,7 +59,7 @@ function createGround(scene: Scene) {
 function createHemisphericLight(scene: Scene) {
   const light = new HemisphericLight(
     "light",
-    new Vector3(2, 1, 0), // move x pos to direct shadows
+    new Vector3(2, 1, 0), 
     scene
   );
   light.intensity = 0.7;

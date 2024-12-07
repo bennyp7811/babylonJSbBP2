@@ -50,14 +50,14 @@ export default function createRunScene(runScene: SceneData) {
   );
   runScene.audio.stop();
 
-  // add baked in animations to player
+  
   runScene.player.then((result) => {
     let skeleton: Skeleton = result!.skeletons[0];
     bakedAnimations(runScene.scene, skeleton);
   });
 
   runScene.scene.onBeforeRenderObservable.add(() => {
-    // check and respond to keypad presses
+    
 
     if (getKeyDown() == 1 && (keyDownMap["m"] || keyDownMap["M"])) {
       keyDownHeld();
@@ -107,7 +107,7 @@ export default function createRunScene(runScene: SceneData) {
     });
   });
 
-  // add incremental action to player
+ 
   runScene.player.then((result) => {
     let characterMesh = result!.meshes[0];
     characterActionManager(runScene.scene, characterMesh as Mesh);

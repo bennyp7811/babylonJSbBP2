@@ -26,7 +26,7 @@ function backgroundMusic(scene: Scene): Sound{
 
   Engine.audioEngine!.useCustomUnlockedButton = true;
 
-  // Unlock audio on first user interaction.
+  
   window.addEventListener('click', () => {
     if(!Engine.audioEngine!.unlocked){
         Engine.audioEngine!.unlock();
@@ -38,10 +38,10 @@ function backgroundMusic(scene: Scene): Sound{
 function createGround(scene: Scene) {
   const groundMaterial = new StandardMaterial("groundMaterial");
   const groundTexture = new Texture("./assets/textures/wood.jpg");
-  groundTexture.uScale  = 4.0; //Repeat 5 times on the Vertical Axes
-  groundTexture.vScale  = 4.0; //Repeat 5 times on the Horizontal Axes
+  groundTexture.uScale  = 4.0; 
+  groundTexture.vScale  = 4.0; 
   groundMaterial.diffuseTexture = groundTexture;
- // groundMaterial.diffuseTexture = new Texture("./assets/textures/wood.jpg");
+ 
   groundMaterial.diffuseTexture.hasAlpha = true;
 
   groundMaterial.backFaceCulling = false;
@@ -60,7 +60,7 @@ function createGround(scene: Scene) {
 function createHemisphericLight(scene: Scene) {
   const light = new HemisphericLight(
     "light",
-    new Vector3(2, 1, 0), // move x pos to direct shadows
+    new Vector3(2, 1, 0), 
     scene
   );
   light.intensity = 0.7;
