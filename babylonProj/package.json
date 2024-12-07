@@ -13,6 +13,8 @@
     "villagepreview": "preview village --host",
     "rotationbuild": "tsc && vite build rotation",
     "rotationpreview": "vite preview rotation --host",
+    "rotationbuild2": "tsc && vite build rotation2",
+    "rotationpreview2": "vite preview rotation2 --host",
     "frames01build": "tsc && vite build frames01",
     "frames01preview": "vite preview frames01 --host",
     "shapes01build": "tsc && vite build shapes01",

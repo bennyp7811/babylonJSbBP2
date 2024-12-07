@@ -1,4 +1,4 @@
-import { SceneData } from "./xinterfaces ";
+import { SceneData } from "./interfaces ";
 
 import {
   Scene,
